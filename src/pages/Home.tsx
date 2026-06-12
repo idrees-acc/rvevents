@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { asset } from "@/lib/asset";
 import {
   ArrowRight,
   CheckCircle,
@@ -85,7 +86,7 @@ export default function Home() {
         {/* Layer 1: Background image faded */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/hero-stage.jpg"
+            src={asset("/hero-stage.jpg")}
             alt="Grand Corporate Event"
             className="w-full h-full object-cover object-center opacity-25"
           />
@@ -329,7 +330,7 @@ export default function Home() {
                   style={{ width: 150, height: 70, padding: 10, flexShrink: 0 }}
                 >
                   <img
-                    src={client.logo}
+                    src={asset(client.logo)}
                     alt={client.name}
                     className="marquee-logo"
                     loading="lazy"
@@ -348,7 +349,7 @@ export default function Home() {
                   style={{ width: 150, height: 70, padding: 10, flexShrink: 0 }}
                 >
                   <img
-                    src={client.logo}
+                    src={asset(client.logo)}
                     alt={client.name}
                     className="marquee-logo"
                     loading="lazy"
@@ -541,7 +542,7 @@ export default function Home() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: "url('/hero-stage.jpg')",
+            backgroundImage: `url('${asset("/hero-stage.jpg")}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

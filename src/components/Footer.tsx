@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Mail, MapPin } from "lucide-react";
 import { FOOTER_SERVICES } from "@/lib/data";
+import { asset } from "@/lib/asset";
 
 const FOOTER_LINKS = [
   { href: "/", label: "Home" },
@@ -19,7 +20,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
               <img
-                src="/rv-logo.png"
+                src={asset("/rv-logo.png")}
                 alt="RV Events Logo"
                 className="h-12 w-auto bg-white rounded-md p-1 object-contain"
               />

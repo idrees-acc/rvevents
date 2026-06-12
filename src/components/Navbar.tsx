@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/data";
+import { asset } from "@/lib/asset";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -16,7 +17,7 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link href="/" className="group flex items-center gap-3">
           <img
-            src="/rv-logo.png"
+            src={asset("/rv-logo.png")}
             alt="RV Events Logo"
             className="h-10 md:h-12 w-auto bg-white rounded-md p-1 object-contain"
           />

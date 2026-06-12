@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { PROJECTS } from "@/lib/data";
+import { asset } from "@/lib/asset";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -47,7 +48,7 @@ export default function Projects() {
                 transition={{ duration: 0.4, delay: i * 0.08 }}
               >
                 <img
-                  src={project.image}
+                  src={asset(project.image)}
                   alt={project.title}
                   className="h-48 w-full object-cover"
                   style={{ objectPosition: project.crop }}
