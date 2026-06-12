@@ -1,4 +1,4 @@
-import { Route, Switch, Router } from "wouter";
+import { Route, Switch } from "wouter";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,8 +9,7 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <Router base="/rvevents">
-      <Layout>
+    <Layout>
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
@@ -20,6 +19,5 @@ export default function App() {
           <Route component={NotFound} />
         </Switch>
       </Layout>
-    </Router>
   );
 }
