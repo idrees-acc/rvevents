@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --radius: 0.25rem;
+
+  --color-primary: oklch(0.22 0.05 260);
+  --color-primary-foreground: oklch(1 0 0);
+  --color-secondary: oklch(0.68 0.12 75);
+  --color-secondary-foreground: oklch(1 0 0);
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.2 0.02 260);
+  --color-muted: oklch(0.97 0.005 260);
+  --color-muted-foreground: oklch(0.55 0.02 260);
+  --color-accent: oklch(0.68 0.12 75);
+  --color-accent-foreground: oklch(1 0 0);
+  --color-destructive: oklch(0.58 0.22 25);
+  --color-border: oklch(0.9 0.01 260);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.2 0.02 260);
+  --color-ring: oklch(0.22 0.05 260);
+}
+
+/* Apply serif to all headings globally like the original */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ── Marquee ── */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Gradient fade on marquee edges */
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 8%, #fff 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #fff 8%, #fff 92%, transparent);
+}
+
+/* Logo images inside marquee */
+.marquee-logo {
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 120px;
+  max-height: 50px;
+  object-fit: contain;
+}
