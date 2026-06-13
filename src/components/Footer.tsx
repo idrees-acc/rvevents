@@ -113,7 +113,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40" style={{ maxWidth: "80rem" }}>
-          <p>&copy; 2024 RV Events &amp; Entertainment Pvt. Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} RV Events &amp; Entertainment Pvt. Ltd. All rights reserved. <a href="https://aewaz.com/" target="_blank" rel="noopener noreferrer" className="no-underline outline-none text-[#007bff] bg-transparent hover:text-blue-400 transition-colors">Built With Care By Aewaz Technologies</a></p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy

@@ -58,9 +58,6 @@ export default function Projects() {
                   <h3 className="font-serif font-semibold text-lg text-primary">
                     {project.title}
                   </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    {project.location} &middot; {project.year}
-                  </p>
                   <span className="mt-3 inline-block rounded-full bg-secondary/10 text-secondary text-xs px-3 py-1">
                     {project.category}
                   </span>

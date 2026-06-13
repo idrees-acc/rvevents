@@ -8,8 +8,8 @@ export const NAV_LINKS = [
 
 export const STATS = [
   { value: "12+", label: "Years of Experience" },
-  { value: "195+", label: "Corporate Events" },
-  { value: "34+", label: "Venue Partnerships" },
+  { value: "200+", label: "Corporate Events" },
+  { value: "45+", label: "Venue Partnerships" },
   { value: "Global", label: "Execution Reach" },
 ];
 
@@ -68,14 +68,14 @@ export const EXPERTISE_ITEMS = [
 export const FEATURES = [
   { title: "Event Execution Expertise", desc: "Flawless operational management from pre-production to post-event." },
   { title: "End-to-End Ownership", desc: "Managing every stage from concept creation to on-ground delivery." },
-  { title: "Large-Scale Capability", desc: "National conventions, exhibitions, and industry forums of any scale." },
+  { title: "Large-Scale Capability", desc: "Global conventions, exhibitions, and industry forums of any scale." },
   { title: "Sponsorship & Media Network", desc: "Deep relationships with media houses and industry sponsors." },
   { title: "Transparent Collaboration", desc: "Structured communication, clear timelines, zero surprises." },
   { title: "Reliable Execution", desc: "On-budget, on-time delivery with uncompromising quality standards." },
 ];
 
 export const CAREER_PERKS = [
-  "Dynamic, fast-paced work on landmark national events",
+  "Dynamic, fast-paced work on landmark global events",
   "Exposure to marquee clients across industries",
   "Collaborative, high-performance team culture",
   "Opportunity for rapid growth and creative ownership",

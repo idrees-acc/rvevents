@@ -1,3 +1,5 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="10.5" fill="none" stroke="#3a0a3a" stroke-width="2"/>
+  <text x="32" y="45" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#3a0a3a" text-anchor="middle">RV</text>
 </svg>
