@@ -37,24 +37,22 @@ export const CLIENTS = [
 export const PRINT_MEDIA = [
   "The Economic Times",
   "Times of India",
-  "ET",
-  "Mid·Day",
-  "Lokmat",
   "Hindustan Times",
-  "Maharashtra Times",
+  "The Hindu",
+  "Regional & Global",
 ];
 
 export const DIGITAL_TV_MEDIA = [
-  "ABP Majha",
-  "Zee 24 Taas",
+  "ABP News",
+  "Zee 24",
   "Republic Bharat",
   "India TV",
-  "TV9 Marathi",
   "Aaj Tak",
   "CNBC TV18",
+  "Regional & Global",
 ];
 
-export const SOCIAL_MEDIA = ["Facebook", "Instagram", "YouTube", "X (Twitter)"];
+export const SOCIAL_MEDIA = ["Facebook", "Instagram", "YouTube", "X (Twitter)", "LinkedIn"];
 
 export const EXPERTISE_ITEMS = [
   { title: "Large-Scale Event Planning" },
