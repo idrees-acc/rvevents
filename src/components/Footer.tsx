@@ -20,16 +20,16 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
               <img
-                src={asset("/rv-logo.png")}
-                alt="RV Events Logo"
-                className="h-12 w-auto bg-white rounded-md p-1 object-contain"
+                src={asset("/logo.jpeg")}
+                alt="RV Events & Entertainment Logo"
+                className="h-12 w-auto rounded-full object-cover"
               />
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-white text-xl leading-none tracking-wide">
                   RV Events
                 </span>
                 <span className="text-white/60 text-[9px] uppercase tracking-widest mt-1">
-                  &amp; Entertainment Pvt. Ltd.
+                  Vision Into Experiences
                 </span>
               </div>
             </Link>
