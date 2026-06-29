@@ -17,16 +17,16 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link href="/" className="group flex items-center gap-3">
           <img
-            src={asset("/rv-logo.png")}
-            alt="RV Events Logo"
-            className="h-10 md:h-12 w-auto bg-white rounded-md p-1 object-contain"
+            src={asset("/logo.jpeg")}
+            alt="RV Events & Entertainment Logo"
+            className="h-10 md:h-12 w-auto rounded-full object-cover"
           />
           <div className="flex flex-col">
             <span className="font-serif font-bold text-white text-lg md:text-xl leading-none tracking-wide group-hover:text-secondary transition-colors">
               RV Events
             </span>
             <span className="text-white/70 text-[10px] uppercase tracking-widest hidden sm:block mt-1">
-              Strategy · Precision · Impact
+              Vision Into Experiences
             </span>
           </div>
         </Link>
@@ -37,11 +37,10 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-secondary ${
-                location === link.href
+              className={`text-sm font-medium transition-colors hover:text-secondary ${location === link.href
                   ? "text-secondary"
                   : "text-white/90"
-              }`}
+                }`}
             >
               {link.label}
             </Link>
@@ -73,11 +72,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm transition-colors py-1 ${
-                  location === link.href
+                className={`text-sm transition-colors py-1 ${location === link.href
                     ? "text-white font-medium"
                     : "text-white/60 hover:text-white"
-                }`}
+                  }`}
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
