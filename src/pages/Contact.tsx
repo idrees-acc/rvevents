@@ -24,7 +24,7 @@ const CONTACT_INFO = [
     icon: MapPin,
     label: "Office Address",
     value:
-      "501, Corporate Arena, Goregaon West, Mumbai \u2013 400 104, Maharashtra",
+      "502, Corporate Arena, Goregaon West, Mumbai \u2013 400 104, Maharashtra",
   },
   {
     icon: Mail,

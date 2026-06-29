@@ -83,7 +83,7 @@ export default function Footer() {
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-secondary" />
                 <div>
                   <p className="font-medium text-white">Corporate Office</p>
-                  <p>501, Corporate Arena, Goregaon West,</p>
+                  <p>502, Corporate Arena, Goregaon West,</p>
                   <p>Mumbai &ndash; 400 104, Maharashtra</p>
                 </div>
               </div>
